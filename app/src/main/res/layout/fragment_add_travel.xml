@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <EditText
+            android:id="@+id/edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Título"
+            android:inputType="text"
+            android:padding="8dp" />
+
+        <!-- Descripción -->
+        <EditText
+            android:id="@+id/edit_description"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Descripción"
+            android:inputType="textMultiLine"
+            android:padding="8dp" />
+
+        <!-- URL de la imagen -->
+        <EditText
+            android:id="@+id/edit_image_url"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="URL de la imagen(Opcional)"
+            android:inputType="textUri"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/image_preview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:scaleX=".5"
+            android:scaleY="1"
+            android:src="@drawable/ic_placeholder" />
+
+        <!-- Ubicación -->
+        <Button
+            android:id="@+id/btn_select_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#48946A"
+            android:gravity="center|center_horizontal"
+            android:text="Seleccionar Imagen" />
+
+        <EditText
+            android:id="@+id/edit_location"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Ubicación"
+            android:inputType="text"
+            android:padding="8dp" />
+
+        <!-- Botón para agregar viaje -->
+        <Button
+            android:id="@+id/btn_add_travel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#48946A"
+            android:text="Agregar Viaje"
+            android:textColor="@android:color/white" />
+
+        <!-- Barra de progreso -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

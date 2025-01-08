@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_travel_list"
+        android:title="Lista de Viajes"
+        android:icon="@drawable/ic_list" />
+
+    <item
+        android:id="@+id/nav_add_travel"
+        android:title="Agregar Viaje"
+        android:icon="@drawable/ic_add" />
+
+</menu>
+
